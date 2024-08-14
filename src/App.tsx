@@ -1,10 +1,12 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavigationBar } from "@/components/NavigationBar";
 import { IntroHeader } from "@/components/IntroHeader";
-import ContentHeader from "@/components/shared/ContentHeader";
-import AboutMeCard from "@/components/shared/AboutMeCard";
+import ContentHeader from "@/components/ContentHeader";
+import AboutMeCard from "@/components/AboutMeCard";
 import ProjectCard from "@/components/ProjectCard";
 import { Projects, Project } from "@/components/data/ProjectList";
+import { SkillCarousel } from "./components/SkillCarousel";
+import ContactCard from "./components/ContactCard";
 import "./App.css";
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <section id="Home">
         <IntroHeader />
       </section>
+      <div className="w-full h-[1px] bg-[#222224] mt-12" />
       <section id="About">
         <ContentHeader primary="Get To Know Me" secondary="About Me" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -46,6 +49,7 @@ function App() {
           development work, ensuring solutions that exceed user expectations.
         </p>
       </section>
+      <div className="w-full h-[1px] bg-[#222224] mt-12" />
       <section id="Projects">
         <ContentHeader primary="Browse My" secondary="Projects" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -63,11 +67,15 @@ function App() {
           ))}
         </div>
       </section>
+      <div className="w-full h-[1px] bg-[#222224] mt-12" />
       <section id="Skills">
         <ContentHeader primary="Explore My" secondary="Skills" />
+        <SkillCarousel />
       </section>
+      <div className="w-full h-[1px] bg-[#222224] mt-12" />
       <section id="Contact">
         <ContentHeader primary="Get In Touch" secondary="Contact Me" />
+        <ContactCard />
       </section>
     </ThemeProvider>
   );

@@ -93,7 +93,14 @@ export const Projects: Project[] = [
     date: "June 2024",
     description:
       "This is a blog management system that allows users to create and manage their accounts, posts, and comments. It is built using Node.js, Express.js, MongoDB, React and Vite.",
-    icons: ["ReactJS", "MongoDB", "Material UI", "JavaScript", "NodeJS"],
+    icons: [
+      "ReactJS",
+      "MongoDB",
+      "Material UI",
+      "Tailwind CSS",
+      "JavaScript",
+      "NodeJS",
+    ],
     codeLink: "https://github.com/Derek1086/blog-app",
     live: false,
     liveLink: null,
