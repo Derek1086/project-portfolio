@@ -105,4 +105,14 @@ export const Projects: Project[] = [
     live: false,
     liveLink: null,
   },
+  {
+    title: "Banter Bot",
+    date: "April 2025",
+    description:
+      "A witty, cheeky Discord bot that dishes out sarcastic British banter to your mates using OpenAI’s GPT. Built with discord.py, async OpenAI API, and a bit of dry humour.",
+    icons: ["Python"],
+    codeLink: "https://github.com/Derek1086/banter-bot/tree/master",
+    live: false,
+    liveLink: null,
+  },
 ];

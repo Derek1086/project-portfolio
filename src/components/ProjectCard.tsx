@@ -28,6 +28,8 @@ export const findImage = (title: string) => {
       return "/projectIcons/Wizard101_Raid_Guide.png";
     case "Blog Website":
       return "/projectIcons/blog_app.png";
+    case "Banter Bot":
+      return "/projectIcons/banter_Img.png";
     default:
       return "/projectIcons/Sentiment_Img.png";
   }
