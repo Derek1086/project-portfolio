@@ -23,7 +23,7 @@ export function NavigationBar() {
   };
 
   return (
-    <div className="bg-black p-2 flex items-center justify-center w-full fixed top-0 left-1/2 transform -translate-x-1/2">
+    <div className="bg-black p-2 flex items-center justify-center w-full fixed top-0 left-1/2 transform -translate-x-1/2 z-50">
       <NavigationMenu>
         <NavigationMenuList className="flex justify-center">
           {tabs.map((tab) => (

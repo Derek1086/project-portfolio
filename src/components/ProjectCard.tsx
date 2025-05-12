@@ -10,29 +10,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+const projectImages: { [key: string]: string } = {
+  "Sentiment Analysis": "/projectIcons/Sentiment_Img.png",
+  "Budget Manager": "/projectIcons/Expense_Img.png",
+  "Notes App": "/projectIcons/Notes_Img.png",
+  "Yelp Recommender System": "/projectIcons/RecSys_Img.png",
+  "fly.mov": "/projectIcons/Fly_Img.png",
+  "Holdfast Melee Census": "/projectIcons/HF_Census_Img.png",
+  "Wizard101 Raid Guide": "/projectIcons/Wizard101_Raid_Guide.png",
+  "Blog Website": "/projectIcons/blog_app.png",
+  "Banter Bot": "/projectIcons/banter_Img.png",
+};
+
 export const findImage = (title: string) => {
-  switch (title) {
-    case "Sentiment Analysis":
-      return "/projectIcons/Sentiment_Img.png";
-    case "Budget Manager":
-      return "/projectIcons/Expense_Img.png";
-    case "Notes App":
-      return "/projectIcons/Notes_Img.png";
-    case "Yelp Recommender System":
-      return "/projectIcons/RecSys_Img.png";
-    case "fly.mov":
-      return "/projectIcons/Fly_Img.png";
-    case "Holdfast Melee Census":
-      return "/projectIcons/HF_Census_Img.png";
-    case "Wizard101 Raid Guide":
-      return "/projectIcons/Wizard101_Raid_Guide.png";
-    case "Blog Website":
-      return "/projectIcons/blog_app.png";
-    case "Banter Bot":
-      return "/projectIcons/banter_Img.png";
-    default:
-      return "/projectIcons/Sentiment_Img.png";
-  }
+  return projectImages[title] || "/projectIcons/Sentiment_Img.png";
 };
 
 export const findIcon = (icon: string) => {
