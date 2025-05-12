@@ -20,7 +20,6 @@ const skills = [
       "Tailwind CSS",
       "ReactJS",
       "Nextjs",
-      "VueJS",
     ],
   },
   {
